@@ -12,8 +12,7 @@ File sec.py is a basic file where you can type in the sec rule comment page and 
 - comments for single rule: https://www.sec.gov/comments/s7-11-23/s71123.htm
 
 ## How to use:
-Run the command `sec.py [url]`
-
+Run the command `python3 sec.py https://www.sec.gov/comments/s7-11-23/s71123.htm`
 
 ## Sample Output
 ```[
