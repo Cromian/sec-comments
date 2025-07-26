@@ -52,19 +52,19 @@ soup = BeautifulSoup(html, "html.parser")
 # Get Docket ID. 
 # We get this via RegEx from the url path e.g. https://www.sec.gov/rules-regulations/2025/06/s7-11-23#34-103320final
 match = re.search(r"/(s7-\d+-\d+)", url, re.IGNORECASE)
-docket_id = "id:", match.group(1)
+docket_id = match.group(1)
 
 # Get docket title:
 # We get this from the h1 value
-docket_title = "title:", soup.find("h1").text.strip()
+docket_title = soup.find("h1").text.strip()
 
 # The links are found in the <table> tag;
 table = soup.find("table")
 links = table.find_all("a");
-file_links = "links:", [a['href'] for a in links if a.has_attr('href')]
+file_links = "[a['href'] for a in links if a.has_attr('href')]
 
 # This is the output of a single docket comment value
-data = [docket_id, docket_title, file_links];
+data = {"id": docket_id, "title": docket_title, "files": file_links];
 
 # Output as JSON
 print(json.dumps(data));
