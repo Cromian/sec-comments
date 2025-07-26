@@ -61,10 +61,10 @@ docket_title = soup.find("h1").text.strip()
 # The links are found in the <table> tag;
 table = soup.find("table")
 links = table.find_all("a");
-file_links = "[a['href'] for a in links if a.has_attr('href')]
+file_data = "[a['href'] for a in links if a.has_attr('href')]
 
 # This is the output of a single docket comment value
-data = {"id": docket_id, "title": docket_title, "files": file_links];
+data = {"id": docket_id, "title": docket_title, "file_data": file_data];
 
 # Output as JSON
 print(json.dumps(data));
