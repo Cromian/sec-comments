@@ -15,52 +15,13 @@ File sec.py is a basic file where you can type in the sec rule comment page and 
 Run the command `python3 sec.py https://www.sec.gov/comments/s7-11-23/s71123.htm`
 
 ## Sample Output
-```[
-  [
-    "id:",
-    "s7-11-23"
-  ],
-  [
-    "title:",
-    "Comments on Daily Computation of Customer and Broker-Dealer Reserve Requirements under the Broker-Dealer Customer Protection Rule"
-  ],
-  [
-    "links:",
-    [
-      "#meetings",
-      "/comments/s7-11-23/s71123-typea.htm",
-      "/comments/s7-11-23/s71123-typeb.htm",
-      "/comments/s7-11-23/s71123-typec.pdf",
-      "/comments/s7-11-23/s71123-580435-1668442.pdf",
-      "/comments/s7-11-23/s71123-580455-1668442.pdf",
-      "/comments/s7-11-23/s71123-526915-1512082.pdf",
-      "/comments/s7-11-23/s71123-526655-1511282.pdf",
-      "/comments/s7-11-23/s71123-485411-1388374.html",
-      "/comments/s7-11-23/s71123-464631-1230054.html",
-      "/comments/s7-11-23/s71123-420279-1002982.html",
-      "/comments/s7-11-23/s71123-411179-972582.pdf",
-      "/comments/s7-11-23/s71123-560562.htm",
-      "/comments/s7-11-23/s71123-549442.htm",
-      "/comments/s7-11-23/s71123-544882.htm",
-      "/comments/s7-11-23/s71123-542242.htm",
-      "/comments/s7-11-23/s71123-523702.htm",
-      "/comments/s7-11-23/s71123-505202.htm",
-      "/comments/s7-11-23/s71123-497002.htm",
-      "/comments/s7-11-23/s71123-230159-481122.htm",
-      "/comments/s7-11-23/s71123-228959-478702.htm",
-      "/comments/s7-11-23/s71123-229319-479462.htm",
-      "/comments/s7-11-23/s71123-227719-475942.htm",
-      "/comments/s7-11-23/s71123-474822.htm",
-      "/comments/s7-11-23/s71123-226239-473922.htm",
-      "/comments/s7-11-23/s71123-473282.htm",
-      "/comments/s7-11-23/s71123-466042.htm",
-      "/comments/s7-11-23/s71123-466302.htm",
-      "#comments",
-      "/comments/s7-11-23/s71123-548455-1571682.pdf",
-      "/comments/s7-11-23/s71123-548295-1570963.pdf",
-      "/comments/s7-11-23/s71123-548535-1571882.pdf",
-      "/comments/s7-11-23/s71123-272620-657162.pdf",
-      "/comments/s7-11-23/s71123-270379-652943.pdf"
-    ]
+```{
+  "id": "s7-11-23",
+  "title": "Comments on Daily Computation of Customer and Broker-Dealer Reserve Requirements under the Broker-Dealer Customer Protection Rule",
+  "file_data": [
+    {
+      "link": "/comments/s7-11-23/s71123-580435-1668442.pdf",
+      "meta": "Text Meta"
+    }
   ]
-]```
+}```
