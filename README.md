@@ -21,7 +21,7 @@ Run the command `python3 sec.py https://www.sec.gov/comments/s7-11-23/s71123.htm
   "title": "Comments on Daily Computation of Customer and Broker-Dealer Reserve Requirements under the Broker-Dealer Customer Protection Rule",
   "file_data": [
     {
-      "link": "/comments/s7-11-23/s71123-580435-1668442.pdf",
+      "link": "https://www.sec.gov/comments/s7-11-23/s71123-580435-1668442.pdf",
       "meta": "Text Meta"
     }
   ]
