@@ -15,7 +15,8 @@ File sec.py is a basic file where you can type in the sec rule comment page and 
 Run the command `python3 sec.py https://www.sec.gov/comments/s7-11-23/s71123.htm`
 
 ## Sample Output
-```{
+```
+{
   "id": "s7-11-23",
   "title": "Comments on Daily Computation of Customer and Broker-Dealer Reserve Requirements under the Broker-Dealer Customer Protection Rule",
   "file_data": [
