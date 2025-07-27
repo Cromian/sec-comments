@@ -50,7 +50,7 @@ except requests.RequestException as e:
 soup = BeautifulSoup(html, "html.parser")
 
 # Get Docket ID. 
-# We get this via RegEx from the url path e.g. https://www.sec.gov/rules-regulations/2025/06/s7-11-23#34-103320final
+# We get this via RegEx from the url path e.g. https://www.sec.gov/comments/s7-11-23/s71123.htm
 match = re.search(r"/(s7-\d+-\d+)", url, re.IGNORECASE)
 docket_id = match.group(1)
 
@@ -63,12 +63,10 @@ table = soup.find("table")
 links = table.find_all("a");
 
 # The hyperlinks on this page have text that we save as text meta.
-src_data = [{"file_link": a.get('href'), "text_meta": a.get_text(strip=True)} for a in table.find_all('a', href=True)]
+src_data = [{"file_link": "https://www.sec.gov" + a.get('href'), "text_meta": a.get_text(strip=True)} for a in table.find_all('a', href=True)]
 
 # This is the output of a single docket comment value
 data = {"id": docket_id, "title": docket_title, "src_data": src_data};
 
 # Output as JSON
 print(json.dumps(data));
-
-
