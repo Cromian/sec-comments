@@ -61,15 +61,14 @@ docket_title = soup.find("h1").text.strip()
 # The links are found in the <table> tag;
 table = soup.find("table")
 links = table.find_all("a");
-file_data = [a['href'] for a in links if a.has_attr('href')]
+
+# The hyperlinks on this page have text that we save as text meta.
+src_data = [{"file_link": a.get('href'), "text_meta": a.get_text(strip=True)} for a in table.find_all('a', href=True)]
 
 # This is the output of a single docket comment value
-data = {"id": docket_id, "title": docket_title, "file_data": file_data};
+data = {"id": docket_id, "title": docket_title, "src_data": src_data};
 
 # Output as JSON
 print(json.dumps(data));
-
-
-
 
 
